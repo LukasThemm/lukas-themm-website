@@ -17,8 +17,16 @@ h2{font-size:clamp(1.65rem,4vw,2.5rem)}
 p{max-width:62ch}img{display:block;width:100%;height:auto;margin-block:2rem}
 form,label{display:grid;gap:.6rem;max-width:35rem}
 input,textarea,button{background:#101820;color:inherit;border:1px solid #405367;padding:.55rem;font:inherit}
-</style><style>html body{color:#fff}body header a,body footer a{color:#fff}body h1,body h2,body h3,body .button,body .button:hover{color:#f2cf83}body input,body textarea{color:#fff}body button{color:#f2cf83}</style>
+.contact-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.25rem 0}.contact-links a{color:#f2cf83}</style><style>html body{color:#fff}body header a,body footer a{color:#fff}body h1,body h2,body h3,body .button,body .button:hover{color:#f2cf83}body input,body textarea{color:#fff}body button{color:#f2cf83}</style>
 <header><a href="index.html">Lukas Themm</a><nav aria-label="Main navigation"><a href="vision.html">Vision &amp; Philosophy</a> <a href="work.html">Creative Producer &amp; References</a><a href="network.html">Work with me</a><a href="methods.html">Integrational Methods</a><a href="contact.html">Contact</a></nav></header>
+<main>
+  <h1>Contact</h1>
+  <p>If you’re hiring, have a project in mind, or would simply like to connect and learn more about me and my work, I’d be happy to hear from you. Feel free to give me a call or send me a message using the form below.</p>
+  <div class="contact-links">
+    <a href="mailto:lukas.themm@outlook.de">lukas.themm@outlook.de</a>
+    <a href="https://outlook.live.com/mail/0/deeplink/compose?to=lukas.themm%40outlook.de" target="_blank" rel="noopener">Compose in Outlook Web (opens in a new tab)</a>
+    <a href="tel:+4917664387789">+49 176 64387789</a>
+  </div>
 <form action="/api/contact" method="post">
   <label>Name <input type="text" name="name" autocomplete="name" maxlength="120" required></label>
   <label>Email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
