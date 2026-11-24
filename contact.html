@@ -19,10 +19,16 @@ form,label{display:grid;gap:.6rem;max-width:35rem}
 input,textarea,button{background:#101820;color:inherit;border:1px solid #405367;padding:.55rem;font:inherit}
 </style><style>html body{color:#fff}body header a,body footer a{color:#fff}body h1,body h2,body h3,body .button,body .button:hover{color:#f2cf83}body input,body textarea{color:#fff}body button{color:#f2cf83}</style>
 <header><a href="index.html">Lukas Themm</a><nav aria-label="Main navigation"><a href="vision.html">Vision &amp; Philosophy</a> <a href="work.html">Creative Producer &amp; References</a><a href="network.html">Work with me</a><a href="methods.html">Integrational Methods</a><a href="contact.html">Contact</a></nav></header>
-<p>Form preview. Message delivery will be available when a form service is connected.</p>
-<form><label>Name <input autocomplete="name"></label><label>Email <input type="email" autocomplete="email"></label><label>Message <textarea rows="4"></textarea></label><button type="button" disabled>Send message</button></form>
+<form action="/api/contact" method="post">
+  <label>Name <input type="text" name="name" autocomplete="name" maxlength="120" required></label>
+  <label>Email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+  <label>Message <textarea name="message" rows="4" maxlength="5000" required></textarea></label>
+  <p>See the <a href="privacy.html">privacy policy</a> for information about how your message is handled.</p>
+  <div hidden><input name="website" tabindex="-1" autocomplete="off"></div><button type="submit">Send message</button>
+</form>
 </main>
 <footer><a href="legal.html">Legal notice</a><a href="privacy.html">Privacy policy</a></footer>
 </html>
+
 
 

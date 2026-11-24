@@ -35,12 +35,18 @@ input,textarea,button{background:#101820;color:var(--ink);border:1px solid var(-
 <section id="methods"><h2>Integrational Methods</h2><p class="note">Explore the unique combination of energy techniques and its integration for successful project realization.</p></section>
 </div>
 <div class="wrap"><section id="contact"><h2>Contact</h2><div>
-<p>Form preview. Message delivery will be available when a form service is connected.</p>
-<form><label>Name <input autocomplete="name"></label><label>Email <input type="email" autocomplete="email"></label><label>Message <textarea rows="4"></textarea></label><button type="button" disabled>Send message</button></form>
+<form action="/api/contact" method="post">
+  <label>Name <input type="text" name="name" autocomplete="name" maxlength="120" required></label>
+  <label>Email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+  <label>Message <textarea name="message" rows="4" maxlength="5000" required></textarea></label>
+  <p>See the <a href="privacy.html">privacy policy</a> for information about how your message is handled.</p>
+  <div hidden><input name="website" tabindex="-1" autocomplete="off"></div><button type="submit">Send message</button>
+</form>
 </div></section></div>
 </main>
 <footer class="wrap"><a href="#top">Back to top</a><a href="legal.html">Legal notice</a><a href="privacy.html">Privacy policy</a></footer>
 </html>
+
 
 
 
