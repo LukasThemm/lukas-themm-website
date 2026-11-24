@@ -19,7 +19,8 @@ section{padding-block:clamp(2.6rem,7vw,5rem);border-bottom:1px solid var(--line)
 .banner span:nth-child(3){background-position:right;filter:grayscale(100%)}
 form,label{display:grid;gap:.5rem}form{gap:1rem}input,textarea,button{font:inherit;padding:.5rem}footer a{margin-right:1rem}
 @media(max-width:36rem){.banner{grid-template-columns:1fr}}
-input,textarea,button{background:#101820;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.65}.learn-more{display:inline-block;margin-top:.6rem;color:var(--accent)}</style><style>html body{color:#fff}body header a,body footer a{color:#fff}body h1,body h2,body h3,body .button,body .button:hover{color:#f2cf83}body input,body textarea{color:#fff}body button{color:#f2cf83}</style>
+input,textarea,button{background:#101820;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.65}.learn-more{display:inline-block;margin-top:.6rem;color:var(--accent)}
+.contact-links{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.25rem 0}.contact-links a{color:#f2cf83}</style><style>html body{color:#fff}body header a,body footer a{color:#fff}body h1,body h2,body h3,body .button,body .button:hover{color:#f2cf83}body input,body textarea{color:#fff}body button{color:#f2cf83}</style>
 <header id="top"><div class="wrap"><a class="brand" href="#top">Lukas Themm</a><nav aria-label="Main navigation"><a href="vision.html">Vision &amp; Philosophy</a><a href="work.html">Creative Producer &amp; References</a><a href="network.html">Work with me</a><a href="methods.html">Integrational Methods</a><a href="contact.html">Contact</a></nav></div></header>
 <main>
 <figure class="banner" aria-label="Three photographs">
@@ -34,7 +35,13 @@ input,textarea,button{background:#101820;color:var(--ink);border:1px solid var(-
 <section id="network"><h2>Work With Me</h2><div class="note"><p>If you’re hiring for creative production, event production, or experiential projects, I’d be glad to hear what you’re building.</p><a class="learn-more" href="network.html" aria-label="Learn more about Work With Me">Learn more &rarr;</a></div></section>
 <section id="methods"><h2>Integrational Methods</h2><div class="note"><p>Explore the unique combination of energy techniques and its integration for successful project realization.</p><a class="learn-more" href="methods.html" aria-label="Learn more about Integrational Methods">Learn more &rarr;</a></div></section>
 </div>
-<div class="wrap"><section id="contact"><h2>Contact</h2><div>
+<div class="wrap"><section id="contact"><h2>Contact</h2><div class="note">
+  <p>If you’re hiring, have a project in mind, or would simply like to connect and learn more about me and my work, I’d be happy to hear from you. Feel free to give me a call or send me a message using the form below.</p>
+  <div class="contact-links">
+    <a href="mailto:lukas.themm@outlook.de">lukas.themm@outlook.de</a>
+    <a href="https://outlook.live.com/mail/0/deeplink/compose?to=lukas.themm%40outlook.de" target="_blank" rel="noopener">Compose in Outlook Web (opens in a new tab)</a>
+    <a href="tel:+4917664387789">+49 176 64387789</a>
+  </div>
 <form action="/api/contact" method="post">
   <label>Name <input type="text" name="name" autocomplete="name" maxlength="120" required></label>
   <label>Email <input type="email" name="email" autocomplete="email" maxlength="254" required></label>
